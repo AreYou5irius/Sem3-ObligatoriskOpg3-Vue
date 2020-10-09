@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Coding Template</title>
+  <link rel="stylesheet" type="text/css" href="bundle.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  
+  <div id="app">
+    <h1>String manipulations</h1>
+
+    <input v-model="wordInput" placeholder="text">
+
+    <select v-model="ChangeText" name="ChangeText">
+      <option selected="selected" value="UpperCase">Upper Case</option>
+      <option value="LowerCase">Lower Case</option>
+    </select>
+
+    <button v-on:click="DoIt()" class="btn btn-primary">Do it!</button>
+      <div>           
+        {{show}}
+      </div>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+
+</html>
